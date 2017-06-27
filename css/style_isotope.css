@@ -1,0 +1,83 @@
+/* ---- button ---- */
+
+.button {
+    font-family: Droid_Sans, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    color: #2c3e50;
+    border: none;
+    cursor: pointer;
+    height: 47px;
+    background: none;
+    -moz-border-radius: 211px;
+    -webkit-border-radius: 211px;
+    border-radius: 211px;
+    padding: 0 30px;
+}
+
+.button:hover, .button:active {
+    background-color: #2ecc71;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s ;
+    -o-transition: 0.5s ;
+    transition: 0.5s;
+}
+
+.button:focus {
+   outline: none;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto 110px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  margin-left: 0;
+}
+
+/* ---- isotope ---- */
+
+.grid {
+    position: relative;
+    overflow: hidden;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.grid .element-item {
+    padding: 10px;
+    margin-bottom: 30px;
+    height: 280px;
+}
+
+.grid .element-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
